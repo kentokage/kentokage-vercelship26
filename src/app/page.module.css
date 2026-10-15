@@ -61,6 +61,15 @@
   color: var(--text-primary);
 }
 
+.ship {
+  font-family: var(--font-geist-mono);
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--text-secondary);
+  overflow-x: auto;
+  max-width: 100%;
+}
+
 .ctas {
   display: flex;
   flex-direction: row;

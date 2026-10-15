@@ -1,6 +1,18 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
+const SHIP_ASCII = String.raw`
+                 |    |    |
+                )_)  )_)  )_)
+               )___))___))___)\
+              )____)____)_____)\\
+            _____|____|____|____\\\__
+   ---------\                   /---------
+     ^^^^^ ^^^^^^^^^^^^^^^^^^^^^
+       ^^^^      ^^^^     ^^^    ^^
+            ^^^^      ^^^
+`;
+
 export default function Home() {
   return (
     <div className={styles.page}>
@@ -19,6 +31,9 @@ export default function Home() {
             A Next.js app built for Vercel Ship 2026 in San Francisco.
           </p>
         </div>
+        <pre className={styles.ship} aria-label="ASCII art of a sailing ship">
+          {SHIP_ASCII}
+        </pre>
         <div className={styles.ctas}>
           <a
             className={styles.primary}
